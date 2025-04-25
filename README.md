@@ -1,5 +1,7 @@
 # Birch & Bloom Counselling Website
 
+# Still In development!!
+
 ## Overview
 This project delivers a custom, responsive website for **Birch & Bloom Counselling**, a mental health practice offering a safe, judgment-free space for exploring thoughts, emotions, and experiences. The site is designed to showcase the practice’s core services, introduce the counsellor, provide resources, and make it easy for clients to get in touch or book a session.
 
