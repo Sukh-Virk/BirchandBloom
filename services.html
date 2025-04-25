@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Birch &amp; Bloom Counselling</title>
+  <link rel="stylesheet" href="styles3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="custom-header">
+    <div class="header-left">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about" class="active">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact" class="contact-link">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-center">
+      <h1 class="site-title">Birch &amp; Bloom Counselling</h1>
+    </div>
+
+    <div class="header-right">
+      <a href="#chat" class="chat-btn">Let's Chat</a>
+    </div>
+
+    <!-- hamburger toggle -->
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <p class="services-description">
+      At Birch & Bloom Counselling, we offer individual, family, and child/adolescent therapy, believing that small shifts in perspectives, patterns, and behaviours can create meaningful change. Our goal is to walk alongside you, providing support, guidance, and practical tools to help you navigate life’s challenges.
+    </p>
+  </section>
+
+  <section class="services-grid">
+    <div class="service-card">
+      <img src="images/1.jpg" alt="Individual Counselling">
+      <h3>Individual Counselling</h3>
+      <p>Daily stressors can feel overwhelming, leading to anxiety, burnout, or the need for a judgment-free space to process emotions. Individual counseling offers support for anxiety, depression, grief, trauma, self-esteem, and more.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/2.jpg" alt="Family Counselling">
+      <h3>Family Counselling</h3>
+      <p>Every family faces unique challenges. Family counselling offers a structured space to explore communication breakdowns, resolve conflicts, and strengthen relationships in a supportive environment.</p>
+    </div>
+    <div class="service-card">
+      <img src="images/3.jpg" alt="Children & Adolescents Counselling">
+      <h3>Children &amp; Adolescents Counselling</h3>
+      <p>Children and youth face pressures from school, social dynamics, and personal struggles. We offer tools to navigate these challenges and help them feel understood, safe, and empowered.</p>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Location</h3>
+        <p>In-person Clinic, Victoria, BC (Coming soon)</p>
+      </div>
+      <div class="footer-column">
+        <h3>Virtual Clinic Hours</h3>
+        <p>Serving British Columbia and Ontario</p>
+        <p>Monday — Friday<br>6am — 9pm (PST)</p>
+        <p>Saturday — Sunday<br>6am — 9pm (PST)</p>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p><a href="mailto:admin@birchbloomcounselling.com">admin@birchbloomcounselling.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================ Hamburger Toggle Script ================ -->
+  <script>
+    document.querySelector('.mobile-menu-btn')
+      .addEventListener('click', () => {
+        document.querySelector('.header-left')
+          .classList.toggle('active');
+      });
+  </script>
+
+</body>
+</html>
+

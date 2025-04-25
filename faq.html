@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | Birch &amp; Bloom Counselling</title>
+  <link rel="stylesheet" href="styles5.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('images/faq-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.07;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="custom-header">
+    <div class="header-left">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faqs.html" class="active">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-center">
+      <h1 class="site-title">Birch &amp; Bloom Counselling</h1>
+    </div>
+
+    <div class="header-right">
+      <a href="#chat" class="chat-btn">Let's Chat</a>
+    </div>
+
+    <!-- hamburger toggle -->
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- ================= MAIN FAQ CONTENT ================= -->
+  <main class="faq-content">
+    <h1 class="faq-title">FAQ</h1>
+    <section class="faq-grid">
+      <div class="faq-item">
+        <h2>What is a consultation, and do I need one before starting therapy?</h2>
+        <p>A consultation is a brief, no-obligation meeting to determine if therapy is the right fit. It provides an opportunity to ask questions, learn about the approach used in sessions, and discuss your needs before committing to ongoing therapy.</p>
+      </div>
+      <div class="faq-item">
+        <h2>What is the process for starting therapy?</h2>
+        <p>The first step is to book a 15-minute consultation. This is an opportunity to determine whether the therapeutic relationship is a good fit. During this conversation, we will discuss what you are looking for in therapy, how support can be provided, and address any questions you may have.</p>
+        <p>If we decide to move forward, the first full session will focus on understanding your concerns and goals. We will create a personalized care plan, set therapeutic goals, and determine session frequency. The approach will evolve as needed to remain effective.</p>
+      </div>
+      <div class="faq-item">
+        <h2>How do I prepare for my first session?</h2>
+        <ul>
+          <li><strong>Find a quiet, private space</strong> where you can safely share.</li>
+          <li><strong>Arrive on time</strong> to make the most of the session.</li>
+          <li><strong>Engage actively</strong> to benefit from the process.</li>
+          <li><strong>Consistency is key</strong> for steady progress.</li>
+          <li><strong>Be prepared for between-session work</strong> like strategies or exercises.</li>
+        </ul>
+      </div>
+      <div class="faq-item">
+        <h2>Is therapy confidential?</h2>
+        <p>Yes, therapy sessions are confidential, and information shared with your counsellor is protected. However, there are legal exceptions, such as if there is a serious risk of harm to yourself or others.</p>
+      </div>
+      <div class="faq-item">
+        <h2>How do I book a session, and what is your booking policy?</h2>
+        <p>Sessions can be booked online through Jane App or via email at <a href="mailto:admin@birchbloomcounselling.com">admin@birchbloomcounselling.com</a>.</p>
+      </div>
+      <div class="faq-item">
+        <h2>How does billing and insurance coverage work?</h2>
+        <p>After each session, an invoice will be provided which can be submitted to your insurance for reimbursement. At this time, direct billing is not available, and payment is required at the time of session.</p>
+      </div>
+      <div class="faq-item full-width">
+        <h2>How do I know if my therapist is the right fit for me?</h2>
+        <p><strong>Finding the right counsellor is essential for meaningful progress in therapy. A good fit means:</strong></p>
+        <ul>
+          <li>Feeling comfortable and at ease in sessions.</li>
+          <li>Being heard and understood through active listening and empathy.</li>
+          <li>Having your values, beliefs, and opinions respected.</li>
+          <li>Receiving collaborative guidance, rather than being told what to do.</li>
+          <li>Feeling supported, validated, and motivated toward your goals.</li>
+        </ul>
+        <p><em>If a counsellor doesn’t feel like the right match, it’s okay to explore other options. Therapy should be a space where you feel safe, supported, and empowered.</em></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Location</h3>
+        <p>In-person Clinic, Victoria, BC (Coming soon)</p>
+      </div>
+      <div class="footer-column">
+        <h3>Virtual Clinic Hours</h3>
+        <p>Serving British Columbia and Ontario</p>
+        <p>Monday — Friday<br>6am — 9pm (PST)</p>
+        <p>Saturday — Sunday<br>6am — 9pm (PST)</p>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p><a href="mailto:admin@birchbloomcounselling.com">admin@birchbloomcounselling.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================ Hamburger Toggle Script ================ -->
+  <script>
+    document.querySelector('.mobile-menu-btn')
+      .addEventListener('click', () => {
+        document.querySelector('.header-left')
+          .classList.toggle('active');
+      });
+  </script>
+
+</body>
+</html>

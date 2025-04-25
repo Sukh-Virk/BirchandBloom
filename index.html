@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birch & Bloom Counselling</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="custom-header">
+    <div class="header-left">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html" class="active">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-center">
+      <h1 class="site-title">Birch &amp; Bloom Counselling</h1>
+    </div>
+
+    <div class="header-right">
+      <a href="#chat" class="chat-btn">Let's Chat</a>
+    </div>
+
+    <!-- hamburger toggle -->
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </header>
+  
+  
+  
+  <script>
+     document.querySelector('.mobile-menu-btn')
+      .addEventListener('click', () => {
+        document.querySelector('.header-left')
+          .classList.toggle('active');
+      });
+  </script>
+  
+
+  <section class="hero animate-on-scroll">
+    <img src="images/hero.png" class="hero-bg" alt="Hero background">
+    <div class="hero-content">
+      <h1>Welcome, I’m glad <em>you are</em> here.</h1>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <section class="intro-banner animate-on-scroll">
+    <div class="intro-container">
+      <img src="images/bb.png" alt="Birch & Bloom logo" class="intro-logo">
+      <p>
+        Birch & Bloom Counselling provides a safe, judgment-free space for exploring thoughts, emotions, and experiences. Support is available for challenges such as anxiety, life transitions, relationship struggles, grief, or feelings of being stuck. Each approach is tailored to meet individual needs.
+      </p>
+    </div>
+  </section>
+
+  <section id="about" class="about-section animate-on-scroll">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Meet Your Social Worker</h2>
+        <p class="lead">
+          Starting therapy is a big step, and it’s not always easy, but support is available every step of the way.
+        </p>
+        <p>
+          Arandeep Virk, a Registered Social Worker in British Columbia and Ontario, provides a supportive space to navigate challenges, explore emotions, and develop coping strategies.
+        </p>
+        <p>
+          Using various therapeutic modalities, the focus is on fostering meaningful change and helping individuals move forward in a way that works for them.
+        </p>
+        <div class="about-action">
+          <a href="#learn-more" class="text-btn">Learn More</a>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="images/hero2.png" alt="Counselling background">
+        <blockquote>
+          “You are not defined by what you’ve been through, but by the strength it took to keep going.”
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section animate-on-scroll">
+    <div class="services-inner">
+      <h2>What We Do</h2>
+      <p class="services-intro">
+        It all begins with a conversation. Whether seeking support for yourself, your child, or family, therapy provides a space to explore challenges, build understanding, and create meaningful change.
+      </p>
+      <div class="services-grid">
+        <a href="#individual" class="service-card">
+          <img src="images/flowers.png" alt="" class="service-icon">
+          <h3>Individual Counselling</h3>
+        </a>
+        <a href="#family" class="service-card">
+          <img src="images/flowers.png" alt="" class="service-icon">
+          <h3>Family Counselling</h3>
+        </a>
+        <a href="#child" class="service-card">
+          <img src="images/flowers.png" alt="" class="service-icon">
+          <h3>Child &amp; Youth Counselling</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-birch" class="about-birch-section animate-on-scroll">
+    <div class="about-birch-container">
+      <!-- Left Side: Text -->
+      <div class="about-birch-text">
+        <h2>About Birch &amp; Bloom Counselling</h2>
+        <p>
+          Birch &amp; Bloom Counselling is committed to helping clients navigate life’s challenges and achieve meaningful personal growth in a safe, supportive, and confidential space.
+        </p>
+        <p>
+          We use a range of therapeutic approaches—including cognitive-behavioural therapy, solution-focused therapy, and mindfulness-based techniques—to tailor each session to your unique needs.
+        </p>
+        <p>
+          Our goal is to address mental health challenges, enhance well-being, and promote lasting change.
+        </p>
+        <p>
+          Services include individual and family counselling, with flexible session lengths of 60, 90, or 120 minutes to fit your schedule.
+        </p>
+        <p>
+          With a client-centred, trauma-informed approach, we ensure every client feels heard, supported, and empowered on their therapeutic journey.
+        </p>
+      </div>
+  
+      <!-- Right Side: Image -->
+      <div class="about-birch-image">
+        <img 
+          src="images/tree.png" 
+          alt="Branch casting a shadow on a beige wall">
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="faqs" class="faqs-section animate-on-scroll">
+    <div class="faqs-container">
+      <h2 class="faqs-title">FAQs</h2>
+  
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>What is a consultation, and do I need one before starting therapy?</summary>
+          <div class="faq-answer">
+            A consultation is a brief, no‐obligation meeting to determine if therapy is the right fit.
+          </div>
+        </details>
+  
+        <details class="faq-item">
+          <summary>What is the process for starting therapy?</summary>
+          <div class="faq-answer">
+            The first step is to book a 15-minute consultation. This is an opportunity to discuss your needs and goals.
+          </div>
+        </details>
+  
+        <details class="faq-item">
+          <summary>How do I prepare for my first session?</summary>
+          <div class="faq-answer">
+            Before your first session, it’s helpful to think about your goals and any questions you have.
+          </div>
+        </details>
+  
+        <details class="faq-item">
+          <summary>Is therapy confidential?</summary>
+          <div class="faq-answer">
+            Yes, therapy is confidential with exceptions only for safety or legal obligations.
+          </div>
+        </details>
+  
+        <details class="faq-item">
+          <summary>How does billing and insurance coverage work?</summary>
+          <div class="faq-answer">
+            Direct billing is available for most major insurance providers. You can also submit receipts for reimbursement.
+          </div>
+        </details>
+  
+        <details class="faq-item">
+          <summary>How do I book a session, and what is your booking policy?</summary>
+          <div class="faq-answer">
+            You can book online or via email. We ask for 24 hours’ notice for cancellations or rescheduling.
+          </div>
+        </details>
+  
+        <details class="faq-item">
+          <summary>How do I know if my therapist is the right fit for me?</summary>
+          <div class="faq-answer">
+            During your initial consultation, we discuss your preferences and concerns to ensure a good match.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="site-footer animate-on-scroll">
+    <div class="footer-container">
+      <div class="footer-item">
+        <h3>Location</h3>
+        <p>In-person Clinic, Victoria, BC (Coming soon)</p>
+      </div>
+      <div class="footer-item">
+        <h3>Virtual Clinic Hours</h3>
+        <p>Serving British Columbia and Ontario</p>
+        <p>Monday – Friday:<br>6am – 9pm (PST)</p>
+        <p>Saturday – Sunday:<br>6am – 9pm (PST)</p>
+      </div>
+      <div class="footer-item">
+        <h3>Contact</h3>
+        <p><a href="mailto:admin@birchbloomcounselling.com">admin@birchbloomcounselling.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const elems = document.querySelectorAll('.animate-on-scroll');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      elems.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
+
