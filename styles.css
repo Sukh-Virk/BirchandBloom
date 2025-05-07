@@ -27,6 +27,7 @@ header {
   position: relative;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-bottom: 4px solid var(--dark-bg);
 }
 
 .sub-bar {
@@ -100,7 +101,17 @@ header {
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
+  height: 80vh
 }
+
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  border-bottom: 2px solid var(--text-color);
+  color:         var(--primary-color);
+}
+
+
 
 /* — Chat button on the right — */
 .chat-btn {
@@ -541,16 +552,20 @@ header {
 
 /* ================= SERVICES SECTION ================= */
 .services-section {
-  background: var(--dark-bg);
+  background: #4A4039;
   color: var(--bg-color);
   padding: 6rem 2rem;
 }
-
 .services-inner {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
+.faq-book-action {
+  text-align: center;
+  margin: 3rem 0 0; /* 3rem of space above, 0 below */
+}
+
 
 .services-section h2 {
   font-family: 'Playfair Display', serif;
@@ -620,86 +635,6 @@ header {
   line-height: 1.6;
 }
 
-/* ================= FAQS SECTION ================= */
-.faqs-section {
-  background: var(--accent-color);
-  padding: 6rem 2rem;
-}
-
-.faqs-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faqs-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-}
-
-.faqs-title::after {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 3px;
-  background: var(--text-color);
-  margin: 1rem auto 0;
-}
-
-.faq-list {
-  border-top: 1px solid var(--text-color);
-}
-
-.faq-item {
-  border-bottom: 1px solid var(--text-color);
-  transition: all 0.3s ease;
-}
-
-.faq-item[open] {
-  padding-bottom: 1rem;
-}
-
-.faq-item summary {
-  list-style: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 0;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  transition: color 0.3s ease;
-}
-
-.faq-item:hover summary {
-  color: var(--primary-color);
-}
-
-.faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-item summary::after {
-  content: '▼';
-  font-size: 0.8rem;
-  transition: transform 0.3s ease;
-}
-
-.faq-item[open] summary::after {
-  transform: rotate(180deg);
-}
-
-.faq-answer {
-  padding: 0 0 1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-color);
-  animation: fadeIn 0.5s ease;
-}
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
