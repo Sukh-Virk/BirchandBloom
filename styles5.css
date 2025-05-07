@@ -25,6 +25,7 @@
   position: relative;
   z-index: 100;
   flex-wrap: nowrap;
+  border-bottom: 4px solid var(--dark-bg);
 }
 
 .header-left {
@@ -43,11 +44,15 @@
   font-weight: 500;
   transition: color 0.3s ease;
 }
+
+
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: var(--primary-color);
+  border-bottom: 2px solid var(--text-color);
+  color:         var(--primary-color);
 }
 
+  
 .header-center {
   order: 2;
   flex: 1;
