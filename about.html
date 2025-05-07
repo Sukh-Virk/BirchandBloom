@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     .intro-horizontal {
+      display: flex;
       flex-direction: column;
       text-align: center;
     }
@@ -26,6 +27,7 @@
   </style>
 </head>
 <body>
+  <!-- ================= HEADER ================= -->
   <header class="custom-header">
     <div class="header-left">
       <nav>
@@ -35,19 +37,38 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="faq.html">FAQs</a></li>
           <li><a href="resources.html">Resources</a></li>
-          <li><a href="#contact" class="contact-link">Get in Touch</a></li>
+          <li>
+            <a
+              href="https://birchbloomcounselling.janeapp.com/#staff_member/1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get in Touch
+            </a>
+          </li>
+          
         </ul>
       </nav>
     </div>
     <div class="header-center">
-      <h1 class="site-title">Birch & Bloom Counselling</h1>
+      <h1 class="site-title">Birch &amp; Bloom Counselling</h1>
     </div>
     <div class="header-right">
-      <a href="#chat" class="chat-btn">Let's Chat</a>
+      <a href="https://birchbloomcounselling.janeapp.com/#/staff_member/1/bio"
+      class="chat-btn"
+      target="_blank"
+      rel="noopener noreferrer">
+     Let's Chat
+   </a>
+   
     </div>
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </header>
   </header>
 
-  <section class="intro-section intro-horizontal">
+
+  <!-- ================= INTRO SECTION ================= -->
+  <section class="intro-section intro-horizontal animate-on-scroll">
     <div class="intro-image-wrapper">
       <img src="images/aran.png" alt="Arandeep Virk" class="journey-profile large-profile">
     </div>
@@ -58,28 +79,31 @@
     </div>
   </section>
 
-  <section class="journey-section">
+  <!-- ================= JOURNEY SECTION ================= -->
+  <section class="journey-section animate-on-scroll">
     <div class="journey-container">
       <h2 class="journey-title">My Journey</h2>
       <p class="journey-text">My passion for counselling began long before I became a therapist. It started with a simple yet powerful realization—when people are truly heard and supported, they can begin to heal. One of my first experiences in the field was working in a transition home for women and children fleeing violence, where I witnessed firsthand how a safe and compassionate space could transform lives. That experience stayed with me, shaping the way I approach my work today.</p>
-
       <p class="journey-text">Over the years, I’ve had the privilege of supporting individuals and families through some of life’s most challenging moments. I have worked as a registered social worker in hospital settings, long-term care, and community-based mental health services, walking alongside clients facing anxiety, grief, trauma, substance use, and major life transitions. At BC Children’s Hospital, I worked closely with children and families navigating complex medical and emotional challenges, helping them find strength in uncertainty. In the emergency department and ICU, I provided crisis support for individuals and families in critical moments of distress.</p>
-
       <p class="journey-text">Through these experiences, I have learned that therapy is not about "fixing" people—it’s about empowering them to reconnect with their strengths, find clarity, and move toward healing in their own way.</p>
     </div>
   </section>
 
-  <section class="inclusion-section">
+  <!-- ================= INCLUSION SECTION ================= -->
+  <section class="inclusion-section animate-on-scroll">
     <div class="inclusion-content">
       <h2>A Commitment to Inclusion & Individualized Care</h2>
-      <p>Working with neurodiverse children and youth has strengthened my dedication to creating inclusive and supportive environments...</p>
-      <p>Whether working with children, families, or adults, I believe in meeting people where they are...</p>
+      <p>Working with neurodiverse children and youth has strengthened my dedication to creating inclusive and supportive environments where every voice is honored.</p>
+      <p>Whether working with children, families, or adults, I believe in meeting people where they are—tailoring approaches to fit individual strengths and needs.</p>
       <p><strong>At Birch & Bloom Counselling,</strong> I strive to create a space where clients feel seen, heard, and valued—because I truly believe that <em>healing begins with feeling understood.</em></p>
     </div>
-    <img src="images/f.jpg" alt="Soft inclusion themed background" class="inclusion-image">
+    <div class="inclusion-image-wrapper">
+      <img src="images/f.jpg" alt="Soft inclusion themed background" class="inclusion-image">
+    </div>
   </section>
 
-  <footer class="site-footer">
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer animate-on-scroll">
     <div class="footer-grid">
       <div class="footer-column">
         <h3>Location</h3>
@@ -97,6 +121,15 @@
       </div>
     </div>
   </footer>
-  
+
+   <!-- ================ Hamburger Toggle Script ================ -->
+   <script>
+    document.querySelector('.mobile-menu-btn')
+      .addEventListener('click', () => {
+        document.querySelector('.header-left')
+          .classList.toggle('active');
+      });
+  </script>
+
 </body>
 </html>
