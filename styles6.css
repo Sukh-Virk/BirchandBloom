@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --primary-brown: #5c5046;
+  --light-cream: #f5f0e8;
+  --warm-beige: #d9cdbb;
+  --dark-brown: #342F2B;
+  --white: #ffffff;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark-brown);
+  background-color: var(--light-cream);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.custom-header {
+  background: var(--light-cream);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  position: relative;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.logo a {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--dark-brown);
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--dark-brown);
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: var(--primary-brown);
+  border-bottom: 2px solid var(--primary-brown);
+}
+
+.chat-btn {
+  background: var(--dark-brown);
+  color: var(--light-cream);
+  padding: 0.75rem 1.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.chat-btn:hover {
+  background: var(--primary-brown);
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--dark-brown);
+  padding: 0.5rem;
+}
+
+/* Resource Page Styles */
+.resource-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.resource-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.meta .date {
+  margin-right: 1rem;
+}
+
+.resource-header p {
+  margin-bottom: 2rem;
+}
+
+.resource-section {
+  margin-top: 2rem;
+}
+
+.resource-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  border-bottom: 2px solid var(--dark-brown);
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.resource-section ul {
+  list-style: disc inside;
+}
+
+.resource-section li {
+  margin-bottom: 1rem;
+}
+
+.resource-section a {
+  color: var(--dark-brown);
+  text-decoration: underline;
+}
+
+.previous-link {
+  margin: 3rem 0;
+}
+
+.previous-link a {
+  color: var(--dark-brown);
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Footer */
+.site-footer {
+    background-color: #4A4039;
+    color: #F5F0E8;
+    padding: 4rem 2rem;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  }
+  
+  .footer-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-column h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column p, .footer-column a {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #F5F0E8;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .custom-header {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    order: 1;
+  }
+
+  .logo {
+    order: 0;
+    flex: 1;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .chat-btn {
+    order: 2;
+    margin-left: auto;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+.site-footer .footer-col a,
+.site-footer .footer-col a:visited {
+  color: var(--accent-color);
+  text-decoration: none;
+}
