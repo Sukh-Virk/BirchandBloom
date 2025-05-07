@@ -7,16 +7,50 @@
   <link rel="stylesheet" href="styles5.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* Full-page faint forest background */
     body::before {
       content: "";
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background-image: url('images/faq-bg.jpg');
+      background-image: url('https://images.unsplash.com/photo-1446034295857-c39f8844fad4?auto=format&fit=crop&w=1950&q=80');
       background-size: cover;
       background-position: center;
-      opacity: 0.07;
+      opacity: 0.05;
       z-index: -1;
+    }
+    /* Hero quote overlay with forest vibe */
+    .faq-hero {
+      position: relative;
+      height: 70vh;
+      overflow: hidden;
+      margin-bottom: 4rem;
+    }
+    .faq-hero img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.6;
+    }
+    .faq-hero .quote {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+      padding: 0 1rem;
+      max-width: 800px;
+    }
+    .faq-hero .author {
+      margin-top: 1rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      color: #f0f0f0;
     }
   </style>
 </head>
@@ -32,7 +66,16 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="faqs.html" class="active">FAQs</a></li>
           <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html">Get in Touch</a></li>
+          <li>
+            <a
+              href="https://birchbloomcounselling.janeapp.com/#staff_member/1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Get in Touch
+            </a>
+          </li>
+          
         </ul>
       </nav>
     </div>
@@ -42,16 +85,33 @@
     </div>
 
     <div class="header-right">
-      <a href="#chat" class="chat-btn">Let's Chat</a>
+      <a href="https://birchbloomcounselling.janeapp.com/#/staff_member/1/bio"
+      class="chat-btn"
+      target="_blank"
+      rel="noopener noreferrer">
+     Let's Chat
+   </a>
+   
     </div>
-
     <!-- hamburger toggle -->
     <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
   </header>
 
+  <!-- ================= FAQ HERO ================= -->
+  <section class="faq-hero">
+    <img 
+      src="https://images.unsplash.com/photo-1446034295857-c39f8844fad4?auto=format&fit=crop&w=1350&q=80" 
+      alt="Misty forest path" 
+    >
+    <div class="quote">
+      "Vulnerability is not winning or losing; it’s having the courage to show up and be seen when we have no control over the outcome."
+      <div class="author">— Brené Brown</div>
+    </div>
+  </section>
+
   <!-- ================= MAIN FAQ CONTENT ================= -->
   <main class="faq-content">
-    <h1 class="faq-title">FAQ</h1>
+    <h1 class="faq-title">Frequently Asked Questions</h1>
     <section class="faq-grid">
       <div class="faq-item">
         <h2>What is a consultation, and do I need one before starting therapy?</h2>
