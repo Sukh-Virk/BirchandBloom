@@ -20,6 +20,38 @@ body {
   line-height: 1.6;
 }
 
+
+/* ====== Footer credit ====== */
+.footer-credit {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 500;
+  background: rgba(255,255,255,0.05); /* subtle stripe */
+  border-radius: 8px;
+}
+
+.footer-credit p {
+  margin: 0;
+}
+
+.footer-credit a {
+  color: #FFD166;                    /* bright pop of colour */
+  text-decoration: none;
+  border-bottom: 2px solid #FFD166;
+  padding-bottom: 2px;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.footer-credit a:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+
 /* ================= HEADER & NAVIGATION ================= */
 /* ================= HEADER & NAVIGATION ================= */
 header {
@@ -952,3 +984,4 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
+
